@@ -1,0 +1,80 @@
+body {
+  padding-top: 30px;
+}
+@media screen and (max-width: 768px) {
+    body {
+      padding-top: 0px;
+    }
+}
+
+/* navbar styles */
+.navbar-brand span{
+  color: red;
+}
+
+/* jumbotron/intro styles */
+.jumbotron{
+  background-image: url("img/plantshadow.jpeg");
+  background-size: cover;
+  margin-bottom: 0px; /* removes white space caused by standard bootstrap margin */
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 4em;
+  padding-bottom: 15em;
+}
+
+.jumbotron h1{
+  font-size: 5em;
+  color: #efefef
+}
+
+.jumbotron h1::first-letter{
+  font-size: 2em;
+  color: red;
+}
+
+.jumbotron p{
+  font-size: 2em;
+  color: #efefef;
+}
+
+/* learn section styles */
+.learn-section{
+  background-color: #efefef;
+  border-bottom: 1px solid #dbdbdb;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.learn-header{
+}
+
+/* code section styles*/
+.code-section{
+  background-color: #f7f7f7;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.code-header{
+  text-align: center;
+  margin-bottom: 6em;
+}
+.code-header img{
+  height: 4em;
+  width: 4em;
+}
+
+.code-header p, .code-header h3{
+  display: inline-block;
+  padding-left: 1em;
+}
+
+/* contact section styles */
+.contact-section{
+  text-align: center;
+  padding-top: 6em;
+  padding-bottom: 8em;
+}
