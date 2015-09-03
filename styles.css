@@ -1,5 +1,6 @@
 body {
   padding-top: 30px;
+  background-color: #FFFFEE;
 }
 @media screen and (max-width: 768px) {
     body {
@@ -42,29 +43,34 @@ body {
 
 /* learn section styles */
 .learn-section{
-  background-color: #efefef;
-  border-bottom: 1px solid #dbdbdb;
+  background-color: #FFFFEE;
+  /*border-bottom: 1px solid #dbdbdb;*/
   padding-top: 10em;
   padding-bottom: 10em;
 }
 
 .learn-header{
+  padding-bottom: 6em;
 }
 
 /* code section styles*/
 .code-section{
-  background-color: #f7f7f7;
+  background-color: #FFFFEE;
   padding-top: 10em;
   padding-bottom: 10em;
 }
 
 .code-header{
   text-align: center;
-  margin-bottom: 6em;
+  margin-bottom: 8em;
 }
 .code-header img{
   height: 4em;
   width: 4em;
+}
+
+#ga-logo{
+  /*margin-top: 2em;*/
 }
 
 .code-header p, .code-header h3{
@@ -74,7 +80,17 @@ body {
 
 /* contact section styles */
 .contact-section{
+  background-color: #FFFFEE;
   text-align: center;
   padding-top: 6em;
   padding-bottom: 8em;
+}
+
+.contact-header{
+  margin-bottom: 2em;
+}
+
+.contact-links img{
+  height: 4em;
+  width: 4em;
 }
