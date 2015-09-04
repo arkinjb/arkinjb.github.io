@@ -1,15 +1,26 @@
 body {
-  padding-top: 30px;
-  background-color: #FFFFEE;
+  padding-top: 2em;
+  position: relative;
+  background: url("img/concrete_seamless.png") repeat 0 0;
 }
-@media screen and (max-width: 768px) {
-    body {
-      padding-top: 0px;
-    }
+
+a:visited{
+  text-decoration: none;
+}
+
+p, a, .list-group-item {
+  font-family: 'Vollkorn', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu Mono';
 }
 
 /* navbar styles */
-.navbar-brand span{
+.navbar a {
+  font-family: 'Ubuntu Mono';
+  font-size: 1.25em;
+}
+.nav-brand span{
   color: red;
 }
 
@@ -28,7 +39,7 @@ body {
 
 .jumbotron h1{
   font-size: 5em;
-  color: #efefef
+  color: #c9c9c9;
 }
 
 .jumbotron h1::first-letter{
@@ -38,51 +49,58 @@ body {
 
 .jumbotron p{
   font-size: 2em;
-  color: #efefef;
+  color: #c9c9c9;
 }
 
-/* learn section styles */
-.learn-section{
-  background-color: #FFFFEE;
-  /*border-bottom: 1px solid #dbdbdb;*/
-  padding-top: 10em;
-  padding-bottom: 10em;
+/* skills section styles */
+.skills-section{
+  padding-top: 5em;
 }
 
-.learn-header{
+.skills-section .container{
+  padding-bottom: 8em;
+  border-bottom: 1px solid #363a3a;
+}
+
+.skills-header{
   padding-bottom: 6em;
+  text-align: center;
 }
 
 /* code section styles*/
 .code-section{
-  background-color: #FFFFEE;
-  padding-top: 10em;
-  padding-bottom: 10em;
+  padding-top: 5em;
+}
+
+.code-section .container{
+  padding-bottom: 8em;
+  border-bottom: 1px solid #363a3a;
 }
 
 .code-header{
   text-align: center;
-  margin-bottom: 8em;
+  margin-bottom: 3em;
 }
 .code-header img{
   height: 4em;
   width: 4em;
 }
-
-#ga-logo{
-  /*margin-top: 2em;*/
-}
-
 .code-header p, .code-header h3{
   display: inline-block;
   padding-left: 1em;
 }
+.code-section .caption{
+  padding-left: 2em;
+}
+#ga-logo{
+  /*margin-top: 2em;*/
+}
+
 
 /* contact section styles */
 .contact-section{
-  background-color: #FFFFEE;
   text-align: center;
-  padding-top: 6em;
+  padding-top: 3em;
   padding-bottom: 8em;
 }
 
@@ -93,4 +111,19 @@ body {
 .contact-links img{
   height: 4em;
   width: 4em;
+}
+
+@media screen and (max-width: 768px) {
+    /* add more padding so fixed nav does not overlap h1 in jumbotron*/
+    body {
+      padding-top: 4em;
+    }
+    /* center nav links */
+    .navbar a {
+      text-align: center;
+    }
+    /* remove GA logo */
+    #ga-logo{
+      display: none;
+    }
 }

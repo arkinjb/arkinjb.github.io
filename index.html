@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">`
     <link rel="stylesheet" href="styles.css">
@@ -18,16 +20,18 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" id="home_link" href="#">ared<span>J</span></a>
+        <div>
+          <ul class="nav navbar-nav navbar-left">
+            <li><a class="nav-brand" id="home_link" href="#">ared<span>J</span></a></li>
+          </ul>
         </div>
         <div>
           <ul class="nav navbar-nav navbar-right">
-            <li><a id="learn_link" href="#learn">LEARN</a></li>
+            <li><a id="skills_link" href="#skills">SKILLS</a></li>
             <li><a id="code_link" href="#code">CODE</a></li>
             <li><a id="contact_link" href="#contact">CONTACT</a></li>
           </ul>
@@ -38,17 +42,17 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Jared Arkin</h1>
-        <p>Full Stack Web Developer</p>
-        <p>Concert Goer. Bike Rider. Vegetable Gardener.</p>
+        <p>Full Stack Web Developer.</p>
+        <p>Concert Goer. Bike Rider. Gardener.</p>
       </div>
     </div>
 
-    <div class="learn-section" id="learn">
+    <div class="skills-section" id="skills">
         <div class="container">
-          <div class="learn-header row">
+          <div class="skills-header row">
             <div class="col-md-12">
-              <h2>Student at General Assembly - Web Development Immersive Program</h2>
-              <h3>I haven't learned how to do that...yet.</h3>
+              <h1>Student at General Assembly - Web Development Immersive Program</h1>
+              <h2>I haven't learned how to do everything...yet.</h2>
             </div>
           </div>
           <div class="row">
@@ -64,26 +68,26 @@
               </div>
               <div class="col-md-3">
                 <ul class="list-group">
-                  <h4 class="list-group-item-heading">Libraries/Frameworks</h4>
-                  <li class="list-group-item">jQuery</li>
-                  <li class="list-group-item">Node</li>
+                  <h4 class="list-group-item-heading">Libraries & Frameworks</h4>
+                  <li class="list-group-item">jQuery/AJAX</li>
                   <li class="list-group-item">Rails</li>
+                  <li class="list-group-item">Node/Express</li>
                   <li class="list-group-item">Bootstrap</li>
+                  <li class="list-group-item">PostgeSQL/Active Record</li>
                 </ul>
               </div>
               <div class="col-md-3">
                 <ul class="list-group">
                   <h4 class="list-group-item-heading">Methodologies</h4>
                   <li class="list-group-item">MVC, rMVC</li>
+                  <li class="list-group-item">Object Oriented Programming</li>
                   <li class="list-group-item">Agile Workflow</li>
                   <li class="list-group-item">Pair Programming</li>
-                  <li class="list-group-item">User Experience and Design Collaboration</li>
+                  <li class="list-group-item">User Experience Collaboration</li>
                 </ul>
               </div>
-              <div class="col-md-3">
-                  <div class="thumbnail" id="ga-logo">
-                      <img src="https://generalassemb.ly/online/assets/ga-lockup-logo-9d95d5d0a1c966540edaedcb440b1963.png">
-                  </div>
+              <div class="col-md-3" id="ga-logo">
+                  <img src="img/ga_logo_name.png">
               </div>
           </div>
         </div>
@@ -93,27 +97,40 @@
   	  <div class="container">
   		  <div class="row">
     	    <div class="col-md-12 code-header">
-              <a href="https://github.com/arkinjb"><img src="http://knightlab.northwestern.edu/wp-content/uploads/2013/04/github-octodex.jpg"></a>
-              <h3>Github: Home Sweet Home to all my Code Sweet Code</h3>
-              <p>(including this <a href="https://github.com/arkinjb/profile_bootstrap"> website</a>)</p>
+              <a href="https://github.com/arkinjb" target="_blank"><img src="img/octocat.png" target="_blank"></a>
+              <h2>Github: Home Sweet Home to all my Code Sweet Code</h2>
+              <p>(including this <a href="https://github.com/arkinjb/profile_bootstrap" target="_blank"> website</a>)</p>
           </div>
         </div>
         <div class="row">
     		  <div class="col-md-6">
-      			<h3>Farmony</h3>
-      			<p>Technologies used:</p>
-            <p>Node, Express, Sequelize</p>
-            <p>Custom API, Google Maps API</p>
-            <p>AJAX</p>
-      			<p><a href="#">Search for your favorite farmer's market</a></p>
+            <div class="thumbnail">
+              <img src="img/farmony-screenshot.png" alt="Farmony App">
+              <div class="caption">
+          			<h3>Farmony</h3>
+          			<p>Technologies used:</p>
+                <p>Node, Express</p>
+                <p>AJAX, JSON</p>
+                <p>Custom API, Google Maps API</p>
+                <p>SASS, Responsive Design</p>
+                <p>Sequelize</p>
+          			<p><a href="https://farmony.herokuapp.com/" target="_blank">Search for your favorite DC farmer's market</a></p>
+              </div>
+            </div>
     		  </div>
     		  <div class="col-md-6">
-      			<h3>Photos of Paul</h3>
-            <p>Technologies used:</p>
-            <p>Rails</p>
-            <p>Gems: Bcrypt, Paperclip, Figaro</p>
-            <p>Hand-rolled Authentication</p>
-      			<p><a href="#">Upload a photo of your favorite Paul</a></p>
+            <div class="thumbnail">
+              <img src="img/photos-screenshot.png" alt="Photos of Pauls">
+              <div class="caption">
+          			<h3>Photos of Pauls</h3>
+                <p>Technologies used:</p>
+                <p>Ruby on Rails</p>
+                <p>Hand-rolled Authentication</p>
+                <p>Flexbox, Hand-rolled CSS</p>
+                <p>Gems: Bcrypt, Cancancan, Paperclip, Figaro</p>
+          			<p><a href="https://photos-of-paul.herokuapp.com/" target="_blank">Upload a photo of your favorite Paul</a></p>
+              </div>
+            </div>
     		  </div>
   	    </div>
   	  </div>
@@ -127,10 +144,10 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="contact-links list-inline">
-              <li><a href="https://twitter.com/aredj_"><img src="img/twitter.png"></a></li>
-              <li><a href="https://www.linkedin.com/in/jaredarkin"><img src="img/linkedin.png"></a></li>
+              <li><a href="https://twitter.com/aredj_" target="_blank"><img src="img/twitter.png"></a></li>
+              <li><a href="https://www.linkedin.com/in/jaredarkin" target="_blank"><img src="img/linkedin.png"></a></li>
               <li><a href="mailto:arkinjb@gmail.com"><img src="img/envelope.jpg"></a></li>
-              <li><a href="https://open.spotify.com/user/aredj"><img src="img/Spotify-128.png"></a></li>
+              <li><a href="https://open.spotify.com/user/aredj" target="_blank"><img src="img/Spotify-128.png"></a></li>
             </ul>
           </div>
         </div>
@@ -140,6 +157,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
   </body>
 </html>
