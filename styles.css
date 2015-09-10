@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu Mono';
   font-size: 1.25em;
 }
-.nav-brand span{
+#home_link {
   color: red;
 }
 
@@ -121,6 +121,10 @@ h1, h2, h3, h4, h5, h6 {
     /* center nav links */
     .navbar a {
       text-align: center;
+    }
+    /* add extra padding so fixed navbar doesn't cover section when using links */
+    .skills-section, .code-section {
+      padding-top: 14em;
     }
     /* remove GA logo */
     #ga-logo{
