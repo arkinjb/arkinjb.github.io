@@ -63,8 +63,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skills-header{
-  padding-bottom: 6em;
+  padding-bottom: 3em;
   text-align: center;
+}
+
+.skills-headline{
+  margin-top: 4em;
 }
 
 /* code section styles*/
