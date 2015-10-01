@@ -12,7 +12,7 @@ p, a, .list-group-item {
   font-family: 'Vollkorn', serif;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ubuntu Mono';
+  font-family: 'Ubuntu Mono', sans-serif;
 }
 
 /* navbar styles */
@@ -98,6 +98,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #ga-logo{
   /*margin-top: 2em;*/
+}
+#github-link{
+  font-family: 'Ubuntu Mono', sans-serif;
 }
 
 
